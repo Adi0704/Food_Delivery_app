@@ -1,0 +1,102 @@
+/* CartPage.css (or add to your existing CSS file) */
+
+.page-container {
+    background-color: peachpuff;
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h2 {
+    color: darkslategray;
+  }
+  
+  p {
+    color: darkslategrey;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .item-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkslategrey;
+  }
+  @media screen and (max-width: 600px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .item-actions {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+    .item-count {
+        display: inline-block;
+        padding: 0 8px; 
+        font-size: 16px;
+        color: darkslategray;
+      }
+  }
+.rating-stars {
+    display: flex;
+  }
+  
+  .star {
+    font-size: 24px;
+    margin-right: 5px;
+    color: #ddd; 
+    transition: color 0.3s ease;
+    &:hover {
+      color: #ffc107;
+    }
+  }
+  
+  .star.active {
+    color: #ffc107; 
+  }
+ 
+
+.thank-you-message {
+    font-size: 18px;
+    color: #4caf50; 
+    margin-top: 20px;
+  }
+  
+  
+  
